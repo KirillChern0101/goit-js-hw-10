@@ -1,7 +1,15 @@
-import fetchBreeds from './js/cat-api';
-
+import { fetchBreeds, fetchCatByBreed } from './js/cat-api';
 const error = document.querySelector('.error');
 const breedSelect = document.querySelector('.breed-select');
+
+breedSelect.addEventListener('change', getCatDate);
+
+function getCatDate() {
+  const catId = event.target.value;
+  fetchCatByBreed(catId).then(
+    ({ description, name, temperament }) => console.log
+  );
+}
 
 fetchBreeds()
   .then(allCats => {
