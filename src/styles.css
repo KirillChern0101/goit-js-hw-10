@@ -1,0 +1,95 @@
+.custom-select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.custom-select:hover,
+.custom-select:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.custom-loader,
+.custom-error {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffcccb;
+  color: #333;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-cat-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.custom-cat-info img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-cat-info .info {
+  margin-top: 10px;
+}
+
+.custom-cat-info h1.name {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.custom-cat-info p {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 18px;
+}
+
+.custom-cat-info p.temperament {
+  font-weight: bold;
+  color: #777;
+}
+
+body {
+  background-color: #f6f2e6;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 20px;
+}

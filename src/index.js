@@ -1,8 +1,18 @@
 import { fetchBreeds, fetchCatByBreed } from './js/cat-api';
+import SlimSelect from 'slim-select';
+
+new SlimSelect({
+  select: '#selectElement',
+});
 const error = document.querySelector('.error');
 const select = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
 const loader = document.querySelector('.loader');
+
+select.classList.add('custom-select');
+error.classList.add('custom-error');
+catInfo.classList.add('custom-cat-info');
+loader.classList.add('custom-loader');
 
 select.addEventListener('change', getCatData);
 
@@ -30,7 +40,7 @@ function getCatData(event) {
 fetchBreeds()
   .then(cats => {
     cats.map(cat => {
-      const option = `<option value = "${cat.id}">${cat.name}</option>`;
+      const option = `<option value="${cat.id}">${cat.name}</option>`;
       select.insertAdjacentHTML('beforeend', option);
     });
   })
